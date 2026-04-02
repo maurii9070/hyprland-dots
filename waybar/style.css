@@ -27,7 +27,10 @@ window#waybar {
 #window {
     color: #d9d9d9;
     font-weight: 500;
-    min-width: 120px;
+}
+
+window#waybar.empty #window {
+    opacity: 0;
 }
 
 #workspaces {
