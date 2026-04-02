@@ -1,0 +1,87 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font Propo", "Noto Sans", "Noto Color Emoji", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(18, 18, 18, 0.1);
+    color: #f2f2f2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#window,
+#workspaces,
+#clock,
+#network,
+#pulseaudio {
+    padding: 0 10px;
+    margin: 3px 2px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#window {
+    color: #d9d9d9;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+#workspaces {
+    padding: 0 8px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    margin: 0 2px;
+    border-radius: 4px;
+    color: #a0a0a0;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background: rgba(255, 107, 107, 0.28);
+    color: #ffd9d9;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+#network {
+    color: #e6e6e6;
+}
+
+#network.disconnected {
+    color: #ff9f9f;
+}
+
+#pulseaudio {
+    color: #e6e6e6;
+}
+
+#pulseaudio.muted {
+    color: #a0a0a0;
+}
+
+#clock {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#window:hover,
+#workspaces button:hover,
+#network:hover,
+#pulseaudio:hover,
+#clock:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
