@@ -1,0 +1,87 @@
+* {
+    bg:         #121212c7;
+    bg-alt:     rgba(77, 77, 77, 0.45);
+    fg:         #f2f2f2ff;
+    fg-dim:     #a5a5a5ff;
+    accent:     #8ab4f8ff;
+    urgent:     #ff8a80ff;
+    border:     #ffffff1f;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    width: 34%;
+    location: center;
+    anchor: center;
+    transparency: "real";
+    border: 1px;
+    border-color: @border;
+    border-radius: 10px;
+    background-color: @bg;
+    padding: 14px;
+}
+
+mainbox {
+    spacing: 10px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 10px 12px;
+    spacing: 10px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder: "Buscar aplicación...";
+    placeholder-color: @fg-dim;
+}
+
+message {
+    enabled: false;
+}
+
+listview {
+    lines: 10;
+    columns: 1;
+    dynamic: false;
+    fixed-height: true;
+    spacing: 6px;
+    scrollbar: false;
+}
+
+element {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px 10px;
+    spacing: 10px;
+}
+
+element normal.normal {
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element-icon {
+    size: 1.05em;
+}
+
+element-text {
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+mode-switcher {
+    enabled: false;
+}
