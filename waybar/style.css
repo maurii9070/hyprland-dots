@@ -30,7 +30,7 @@ window#waybar {
 }
 
 window#waybar.empty #window {
-    opacity: 0;
+    opacity: 0; /* test */
 }
 
 #workspaces {
